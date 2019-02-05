@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="102dp"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@+id/editValorAngulo"
+        android:layout_toStartOf="@+id/btCalcular"
+        android:text="Valor do ângulo"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <EditText
+        android:id="@+id/editValorAngulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <RadioButton
+        android:id="@+id/rbSeno"
+        android:layout_width="86dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="115dp"
+        android:checked="true"
+        android:text="Seno"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <RadioButton
+        android:id="@+id/rbTangente"
+        android:layout_width="108dp"
+        android:layout_height="47dp"
+        android:layout_alignEnd="@+id/editValorAngulo"
+        android:layout_alignTop="@+id/rbSeno"
+        android:text="Tangente"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <RadioButton
+        android:id="@+id/rbCosseno"
+        android:layout_width="96dp"
+        android:layout_height="47dp"
+        android:layout_alignTop="@+id/rbSeno"
+        android:layout_toEndOf="@+id/textView2"
+        android:text="Cosseno"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_width="124dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:text="Calcular"
+        android:textColor="@android:color/holo_red_dark"
+        tools:text="Calcular" />
+</RelativeLayout>
